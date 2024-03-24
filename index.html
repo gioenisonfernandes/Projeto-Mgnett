@@ -10,15 +10,53 @@
 
 <body>
     <header>
-        <div class="logo">Logo MGNETT PNG</div>
-        <nav class="navegador">
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+
+            <div class="nav-list">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Vantagens</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PLANOS</a></li>
+                    <li class="nav-item"><a href="#"
+                    class="nav-link">INDICAR AMIGO</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTATO</a></li>
                 </ul>
+            </div>
+
+            
+            <div class="btn-cliente"><button><a href="#">CENTRAL DO CLIENTE</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+            
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">PLANOS</a></li>
+                <li class="nav-item"><a href="#"
+                class="nav-link">INDICAR AMIGO</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">CONTATO</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">TESTE DE VELOCIDADE</a></li>
+            </ul> 
+            <div class="btn-cliente"><button><a href="#">CENTRAL DO CLIENTE</a></button>
+            </div>
+        </div>
     </header>
+
+    <script src="script.js"></script>
+
+    <section>
+        <div class="contatos">
+            <ul>
+                <li class="number-list"><a href="tel:+553332511229" class="number">CONTRATE AGORA: (33) 3251-1229</a> </li> 
+                <li class="number-list"><a href="tel:+5533998190482" class="number">(33) 9 9819-0482</a></li>
+            </ul>
+        </div>
+    </section>
     <main>
         <section>
             <img>Homem Foguete</img>

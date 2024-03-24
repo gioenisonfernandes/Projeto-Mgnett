@@ -1,79 +1,159 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-body {
-    background-color: rgb(228, 238, 241);
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 header {
+    background-color: rgb(8, 8, 218);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
+}
+
+.nav-bar {
     display: flex;
-    padding: 30px;
-    background-color: rgb(20, 71, 212);
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.253);
-    
+    justify-content: space-between;
+    padding: 0.8rem 3rem;
 }
 
 .logo {
-    background-color: rgb(84, 99, 236);
-    display: block;
-}
-
-nav.navegador {
-    margin-left: auto;
-    margin-right: 400px;
-}
-
-nav {
-    text-align: right;
     display: flex;
-    max-width: 370px;
+    align-items: center;
     
 }
 
-nav > ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 700;
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+.logo h1 {
     color: white;
-    transition-duration: 0.5s;
 }
 
-nav ul li a:hover {
-    background-color: rgb(1, 26, 168);
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0px 10px;
+    padding: 8px;
+    font-weight: 400;
+}
+
+.nav-item:hover {
     border-radius: 7px;
-
+    background-color: rgb(68, 68, 248);
+    transition: 0.5s;
 }
 
-@media screen and (max-width:558px) {
-    nav ul li {
+.nav-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+}
+
+.btn-cliente button {
+    border: none;
+    background-color: rgb(8, 8, 218);
+    padding: 10px 0px ;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 0.2s;  
+}
+
+.btn-cliente button:hover {
+    background-color: white;
+}
+ 
+.btn-cliente button a:hover {
+    color: blue;
+}
+
+.btn-cliente button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 10px 10px;
+}
+
+section {
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.contatos {
+    display: flex;
+    justify-content: right;
+}
+
+.number-list {
+    margin: 0px 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    list-style: none;
+    text-align: end;
+}
+
+.number {
+    text-decoration: none;
+    padding-right: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(99, 99, 99);  
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+    padding: 1.5rem 4rem;
+    }
+    .nav-item {
+    display: none;
+    }
+    .btn-cliente {
+        display: none;
+    }
+    .mobile-menu-icon {
         display: block;
-        max-width: none;
-        text-align: left;
-        padding-bottom: 10px;
     }
-
-    nav ul li a {
-        padding: 6px;
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor:pointer;
     }
-
-    header {
-        padding-top: 12px;
-        padding-bottom: 1px;
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu.nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu.btn-cliente {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu.btn-cliente button {
+        width: 100%;
+    }
+    .open {
+        display: block;
     }
 }
-
