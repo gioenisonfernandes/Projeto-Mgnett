@@ -9,23 +9,24 @@
 }
 
 header {
-    background-color: rgb(8, 8, 218);
+    background-color: rgb(45, 0, 117);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 0.8rem 3rem;
+    padding: 0;  
 }
 
 .logo {
     display: flex;
-    align-items: center;  
+    align-items: center; 
 }
 
-.logo h1 {
-    color: white;
+.img-logo {
+    max-width: 100px;
+    margin: 0 4rem;
 }
 
 .nav-list {
@@ -61,7 +62,8 @@ header {
 .btn-cliente button {
     border: none;
     background-color: rgb(8, 8, 218);
-    padding: 10px 0px ;
+    padding: 10px 0px;
+    margin: 1.8rem;
     border-radius: 5px;
     border: 1px solid white;
     transition: 0.2s;  
@@ -97,18 +99,6 @@ header {
     padding-right: 0;
 }
 
-.log-list {
-    display: flex;
-    align-items: right;   
-}
-
-.logo-mg {
-    max-width: 100px;
-    margin: 0 auto;
-    padding: 0.6rem 2rem;
-    margin-right: 5; 
-}
-
 .number-list {
     display: block;
     margin: 0px auto;
@@ -135,16 +125,17 @@ header {
 
 @media screen and (max-width: 730px) {
     .nav-bar {
-    padding: 1.5rem 4rem;
+        padding: 0rem 1rem;
     }
     .nav-item {
-    display: none;
+        display: none;
     }
     .btn-cliente {
         display: none;
     }
     .mobile-menu-icon {
         display: block;
+        padding: 2rem 2rem;
     }
     .mobile-menu-icon button {
         background-color: transparent;
