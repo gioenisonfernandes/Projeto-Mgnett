@@ -120,10 +120,6 @@ header {
     display: none;
 }
 
-.div-banner{
-    
-}
-
 .banner {
     max-width: 100%;
     height: auto;
@@ -169,5 +165,11 @@ header {
     }
     .open {
         display: block;
+    }
+    .banner {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.288);
     }
 }
