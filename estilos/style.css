@@ -88,8 +88,7 @@ header {
 .sub-nav {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
-    
+    align-items: flex-start;   
 }
 
 .contatos {
@@ -99,8 +98,8 @@ header {
 
 .number-list {
     display: block;
-    margin: 0px auto;
-    font-weight: 600;
+    margin: 1px auto;
+    font-weight: 450;
     font-size: 0.8rem;
     list-style: none;
     text-align: end;
@@ -119,6 +118,17 @@ header {
 
 .mobile-menu {
     display: none;
+}
+
+.div-banner{
+    
+}
+
+.banner {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.288);
 }
 
 @media screen and (max-width: 730px) {
