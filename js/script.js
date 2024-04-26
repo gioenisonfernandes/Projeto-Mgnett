@@ -8,3 +8,12 @@ function menuShow() {
         document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
     }
 }
+
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 6000);

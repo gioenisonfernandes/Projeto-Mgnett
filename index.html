@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MGNETT</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,8 +51,6 @@
         </div>
     </header>
 
-    <script src="js/script.js"></script>
-
     <section class="sub-nav">
 
         <div class="contatos">
@@ -65,19 +67,65 @@
                 <img class="banner" src="imagens/banner-mgnett.jpg" alt="banner">
             </div>
         </section>
+        <section class="container-planos">
+            <div class="planos">
+                <h5 data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-duration="2200">CONHEÇA</h5>
+                <h2 data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-duration="2200">NOSSOS PLANOS</h2>
+                <p data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2200">Explore o mundo digital sem limites e mantenha-se conectado com quem e o que mais importa com nossa internet de alta velocidade </p>
+            </div>
+        </section>
 
-        <section>
-            <article> Card 50Mega R$ 59,90
-            </article>
+    
+        <section class="carrossel">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    
+                    <div class="slide first">
+                        <img src="imagens/imagem1.jpg" alt="imagem1">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/imagem2.jpg" alt="imagem2">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/imagem3.jpg" alt="imagem3">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/imagem4.jpg" alt="imagem4">
+                    </div>
 
-            <article> Card 100Mega R$ 69,90
-            </article>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    
+                </div>
 
-            <article> Card 300Mega R$ 99,90
-            </article>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            
+            </div>
+        </section>
 
-            <article> Card 500Mega R$ 149,90
-            </article>
+        <div class="btn-assine">
+            <a href="#"><button>Assine já</button></a>
+        </div>
+
+        
         </section>
         <section>
             <div>
@@ -112,6 +160,27 @@
             </div>
         </footer>
     </main>
+
+    <section>
+        <article> Card 50Mega R$ 59,90
+        </article>
+
+        <article> Card 100Mega R$ 69,90
+        </article>
+
+        <article> Card 300Mega R$ 99,90
+        </article>
+
+        <article> Card 500Mega R$ 149,90
+        </article>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 </body>
 
 </html>
