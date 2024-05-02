@@ -111,7 +111,8 @@ header {
 .sub-nav {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;   
+    align-items: flex-start;
+    background-color: rgba(231, 231, 231, 0.918);   
 }
 
 .contatos {
@@ -163,7 +164,7 @@ header {
 }
 
 .carrossel {
-    background-color: #fff;
+    background-color: transparent;
     margin: 0;
     padding: 0;
     display: flex;
@@ -284,7 +285,7 @@ input {
 }
 
 .btn-assine button {
-    --color: #560bad;
+    --color: rgb(8, 8, 218);
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -300,6 +301,7 @@ input {
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
+    cursor: pointer;
    }
    
    button:before {
@@ -328,9 +330,13 @@ input {
    }
    
    button:active:before {
-    background: #3a0ca3;
+    background: rgb(8, 8, 218);
     transition: background 0s;
    }
+
+.global {
+    background: linear-gradient(to top,#ffffff79, rgba(231, 231, 231, 0.918));
+}
 
 
 .container-planos {
@@ -338,6 +344,8 @@ input {
     align-items: center;
     justify-content: center;
     padding: 50px 0px;
+    background-color: transparent;
+    
     
 }
 
@@ -377,7 +385,15 @@ input {
     max-width: 600px;
 }
 
+.rwb-tooltip {
+    background-color: #797bff;
+}
 
+.rwb-tooltip h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+}
 
 @media screen and (max-width: 730px) {
     .nav-bar {
