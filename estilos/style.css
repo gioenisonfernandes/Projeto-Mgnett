@@ -10,6 +10,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -176,8 +180,8 @@ header {
 }
 
 .slider {
-    width: 1000px;
-    height: 550px;
+    width: 40%;
+    height: 40%;
     border-radius: 10px;
     padding: 5px;
     overflow: hidden;
@@ -186,7 +190,7 @@ header {
 
 .slides {
     display: flex;
-    width: 410%;
+    width: 420%;
     height: 100%;   
 }
 
@@ -490,6 +494,14 @@ input {
 
 
 @media screen and (max-width: 730px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0px;
+    }
     .nav-bar {
         padding: 0rem 1rem;
     }
@@ -631,6 +643,11 @@ input {
     .btn-indicar {
         top: 83%;
         left: 8%;
+    }
+    .slider {
+        width: auto;
+        height: auto;
+        border-radius: 10px;
     }
 }
 
