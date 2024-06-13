@@ -1,0 +1,59 @@
+.h1-vantagens {
+   text-align: center;
+   font-family: 'saira';
+   font-size: 30px;
+   font-weight: 600;
+   padding: 30px 0;
+   color: rgb(66, 66, 66);
+   background-color: rgb(233, 230, 255);
+}
+.vantagens {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: rgb(233, 230, 255);
+}
+
+.item {
+   flex: 1 1 30%;
+   margin: 20px;
+   text-align: center;
+   box-sizing: border-box;
+   color: rgb(60, 60, 255);
+}
+.item h2 {
+   margin-top: 20px;
+   font-size: 20px;
+   font-family: 'saira';
+   font-weight: 600;
+   color: rgb(66, 66, 66);
+}
+.item p {
+   margin-top: 10px;
+   font-size: 16px;
+   font-weight: 350;
+   font-family: 'saira';
+   color: rgb(41, 41, 41);
+}
+
+.fiber img{
+   width: 80px;
+   height: 80px;
+}
+.down-upload img{
+   
+   width: 80px;
+   height: 80px;
+}
+.redundancia img{
+   width: 70px;
+   height: 70px;
+   margin-bottom: 10px;
+}
+.atendimento img{
+   width: 80px;
+   height: 80px;
+}
+.experiencia img{
+   width: 80px;
+   height: 80px;
+}
