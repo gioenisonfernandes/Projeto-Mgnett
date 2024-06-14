@@ -3,6 +3,7 @@
    font-family: 'saira';
    font-size: 30px;
    font-weight: 600;
+   text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.089);
    padding: 30px 0;
    color: rgb(66, 66, 66);
    background-color: rgb(233, 230, 255);
@@ -56,4 +57,16 @@
 .experiencia img{
    width: 80px;
    height: 80px;
+}
+
+
+@media screen and (max-width: 530px) {
+   .vantagens {
+      display: flex;
+      flex-direction: column;
+   }
+   .h1-vantagens {
+      font-size: 25px;
+      text-shadow: 5px 2px 9px rgba(0, 0, 0, 0.089);
+   }
 }

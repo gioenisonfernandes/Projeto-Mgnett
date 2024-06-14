@@ -1,0 +1,93 @@
+.footer {
+    display: flex;
+    background-color: rgb(60, 60, 255)
+}
+
+.logo-footer img {
+    width: 50%;
+    margin: 20px 0px 0 80px;
+    padding: 0;
+}
+.lojas {
+    margin-top: 50px;
+ }
+ .lojas h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'saira';
+    color: rgb(255, 255, 255);
+ }
+ .lojas h3 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'saira';
+    margin: 10px 0px;
+    color: rgb(255, 255, 255);
+    
+ }
+ .lojas a {
+    text-decoration: none;
+    font-family: 'saira';
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0px 0px 0px 30px;
+    color: rgba(255, 255, 255, 0.747);
+ }
+ .redes-sociais {
+    margin: 50px 0px 0px 80px;
+ }
+ .redes-sociais h2 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'saira';
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+ }
+.redes-sociais a {
+    margin: 0px 0px 0px 15px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.horario {
+    margin: 50px 0px 0px 50px;
+}
+.horario h2 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'saira';
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.horario h3 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'saira';
+    color: rgb(255, 255, 255);
+}
+.atbr {
+    padding: 30px 0px 15px 0px;
+    background-color: rgb(60, 60, 255);
+}
+.atbr a {
+    font-family: 'saira';
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.atribuicao {
+    text-align: center;
+    align-items: center;
+    font-family: 'saira';
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 530px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-footer {
+        display: none;
+    }
+}
