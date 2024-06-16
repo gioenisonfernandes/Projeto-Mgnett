@@ -1,72 +1,76 @@
 .footer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: rgb(60, 60, 255)
 }
 
 .logo-footer img {
     width: 50%;
-    margin: 20px 0px 0 80px;
-    padding: 0;
+    padding: 40px 0px 0px 80px;
 }
-.lojas {
-    margin-top: 50px;
- }
- .lojas h2 {
-    font-size: 18px;
+.lojas h2 {
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 10px;
+    text-align: center;
     font-family: 'saira';
     color: rgb(255, 255, 255);
  }
- .lojas h3 {
+.lojas h3 {
     font-size: 15px;
     font-weight: 300;
     font-family: 'saira';
-    margin: 10px 0px;
+    margin-bottom: 5px;
     color: rgb(255, 255, 255);
     
  }
- .lojas a {
+.lojas a {
     text-decoration: none;
     font-family: 'saira';
     font-size: 13px;
     font-weight: 500;
-    margin: 0px 0px 0px 30px;
+    margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.747);
  }
- .redes-sociais {
-    margin: 50px 0px 0px 80px;
- }
- .redes-sociais h2 {
-    font-size: 18px;
+.redes-sociais h2 {
+    font-size: 15px;
     font-weight: 500;
     font-family: 'saira';
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
  }
 .redes-sociais a {
-    margin: 0px 0px 0px 15px;
     font-size: 25px;
+    padding-left: 15px;
     color: rgb(255, 255, 255);
 }
 .horario {
-    margin: 50px 0px 30px 50px;
+
 }
 .horario h2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     font-family: 'saira';
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
 }
 .horario h3 {
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 13px;
+    font-weight: 200;
     font-family: 'saira';
     color: rgb(255, 255, 255);
 }
+.extra {
+   flex: 1;
+   padding: 10px;
+   align-items: center;
+   text-align: center;
+   margin: 50px 0px;
+}
 .atbr {
-    padding: 30px 0px 15px 0px;
+    padding: 20px 0px 20px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.438);
     background-color: rgb(60, 60, 255);
 }
 .atbr a {
@@ -91,4 +95,7 @@
     .logo-footer {
         display: none;
     }
-}
+    .extra {
+        margin-top: 10px;
+    }
+    
