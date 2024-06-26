@@ -24,96 +24,6 @@ body {
 
 }
 
-header {
-    position: relative;
-    background: linear-gradient(to bottom,#1717f8, rgb(12, 13, 99));
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
-    max-height: 5rem;
-}
-
-.nav-bar {
-    display: flex;
-    max-height: 4rem;
-    justify-content: space-between;
-    padding: 0;  
-}
-
-.logo {
-    display: flex;
-    align-items: center; 
-}
-
-.img-logo {
-    max-width: 120px;
-    max-height: auto;
-    margin: 0 3rem;
-}
-
-.nav-list {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 20%;
-    left: 23%;
-    right: 30%;
-    bottom: 20%;
-}
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0px 10px;
-    padding: 8px;
-    font-weight: 400;   
-}
-
-.nav-item:hover {
-    border-radius: 7px;
-    background-color: rgb(68, 68, 248);
-    transition: 0.5s;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: white;
-    font-weight: 400;
-    white-space: nowrap;
-}
-
-.btn-cliente {
-    display: flex;
-    align-items: center;
-    right: 20%;
-    font-family: 'saira';
-}
-
-.btn-cliente button {
-    position: absolute;
-    display: flex;
-    right: 5%;
-    background-color: rgb(8, 8, 218);
-    border-radius: 5px;
-    border: 0.1px solid rgba(255, 255, 255, 0.63);
-    transition: 0.2s;  
-}
-
-.btn-cliente button a:hover {
-    background-color: rgb(255, 255, 255);
-    color: blue;
-}
-
-.btn-cliente button a {
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    font-size: 0.8rem;
-    padding: 10px 10px;
-}
 
 .sub-nav {
     display: flex;
@@ -494,49 +404,7 @@ input {
 
 
 @media screen and (max-width: 761px) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        padding: 10px 0px;
-    }
-    .nav-bar {
-        padding: 0rem 1rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .btn-cliente {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor:pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .btn-cliente {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .btn-cliente button {
-        width: 100%;
-    }
+   
     .open {
         display: block;
     }

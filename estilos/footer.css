@@ -45,9 +45,6 @@
     padding-left: 15px;
     color: rgb(255, 255, 255);
 }
-.horario {
-
-}
 .horario h2 {
     font-size: 15px;
     font-weight: 500;
@@ -98,4 +95,4 @@
     .extra {
         margin-top: 10px;
     }
-    
+}

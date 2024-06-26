@@ -1,0 +1,199 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #00009b;
+    backgroun: linear-gradient(to bottom,#1717f8, rgb(12, 13, 99));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0;  
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+}
+.img-logo {
+    max-width: 120px;
+    max-height: auto;
+    margin: 1 3rem;
+}
+.hamburguer {
+    display: none;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 80px;
+}
+.nav-list ul li {
+    height: 50px;
+    margin-top: 18px;
+}
+.nav-list ul li a {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: 450;
+    font-family: 'saira';
+    border-radius: 50px;
+    transition: 0.2;
+    padding: 10px 15px;
+    text-decoration: none;  
+}
+.nav-list ul li a:hover {
+    background: #fdfdfd;
+    color: #00009b;
+    transition: 0.5s;
+}
+.nav-item {
+    font-weight: 400;
+    height: 80px;     
+}
+.btn-cliente1 {
+    display: none;
+}
+.btn-cliente {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+.btn-cliente button {
+    padding: 7px 0px;
+    background-color: rgb(8, 8, 218);
+    border-radius: 8px;
+    border: 0.1px solid rgba(255, 255, 255, 0.63);   
+}
+.btn-cliente button a:hover {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    transition: 0.2s;
+}
+.btn-cliente button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-family: 'saira';
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 870px){
+
+.logo {
+    margin-left: 4rem;
+}
+}
+@media screen and (max-width: 820px){
+
+.logo {
+    margin-left: 2rem;
+}
+.btn-cliente {
+    margin-right: 2%;
+}
+
+}
+@media screen and (max-width: 750px){
+
+header {
+    border-bottom: 5px solid white;
+}
+.nav-list {
+    height: 0;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #00009b;
+    transition: 0.5s;
+}
+.nav-list.active {
+    height: 240px;
+}
+.nav-list ul {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    opacity: 0;
+}
+.nav-list.active ul {
+    opacity: 1;
+    transition: 1.5s;
+}
+.nav-list.active div {
+    opacity: 1;
+    transition: 1.5s;
+}
+.nav-list ul li {
+    margin: 10px;
+}
+.nav-list ul li a {
+    align-items: center;
+    text-align: center;
+}
+.nav-item {
+    height: 60px;
+}
+.btn-cliente {
+    display: none;
+}
+.btn-cliente1 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 80%;
+    bottom: 8%;
+    text-align: center;
+    opacity: 0;
+}
+.btn-cliente1 button {
+    padding: 7px 0px;
+    background-color: rgb(8, 8, 218);
+    border-radius: 8px;
+    border: 0.1px solid rgba(255, 255, 255, 0.63);   
+}
+.btn-cliente1 button a:hover {
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    transition: 0.2s;
+}
+.btn-cliente1 button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-family: 'saira';
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+.logo {
+    margin-left: 4rem;
+}
+.hamburguer {
+    display: block;
+    cursor: pointer;
+    margin: 23px 60px;
+}
+.hamburguer .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+
+}
+}
