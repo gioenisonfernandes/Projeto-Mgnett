@@ -4,6 +4,13 @@ hamburguer.onclick = function() {
     navBar.classList.toggle("active");
 }
 
+function closeMenu() {
+    var menu =
+    document.getElementById('menu');
+
+    menu.classList.remove('active');
+}
+
 var counter = 1;
 setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
