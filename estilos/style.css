@@ -402,6 +402,31 @@ input {
     color: white;
    }
 
+.sobre {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-bottom: 49%;
+    background-color: #9ea0ff;
+}
+
+.sobre h1 {
+    position: relativ;
+    width: 20%;
+    height: 35px;
+    padding-top: 5%;
+    text-align: center;
+    align-items: center;
+}
+.video {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    
+    
+}
 
 @media screen and (max-width: 761px) {
    
